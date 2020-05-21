@@ -11,4 +11,5 @@
 
      }
      - webpack --devtool node --mode develpment --target node  index.js
-     
+     - process.argv
+     - process.stdin.on()
