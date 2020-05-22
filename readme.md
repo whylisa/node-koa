@@ -13,3 +13,27 @@
      - webpack --devtool node --mode develpment --target node  index.js
      - process.argv
      - process.stdin.on()
+     - npm event-stream 事件
+     - require('events').EventEmitter
+     ```js
+       const EventEmitter = require('events').EventEmitter
+       class Geektime extends EventEmitter {
+         constructor() {
+           super();
+           setInterval(() => {
+             this.emit('newlessson', { price: Math.random()*100})
+           },3000)
+         }
+       }
+       const geektime = new Geektime()
+       geektime.addListener("newlesson", (res) => {
+         if(res.price < 80>) {
+           console.log('buy',res)
+         }
+       })
+     ```
+
+     - 非阻塞I-O
+     - 异步编程callback
+     - 事件循环
+     - promise
