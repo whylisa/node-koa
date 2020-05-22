@@ -15,6 +15,10 @@
      - process.stdin.on()
      - npm event-stream 事件
      - require('events').EventEmitter
+       - 观察者模式
+       - 调用vs抛事件
+         - 关键在于不知道被通知者存在
+         - 以及没有人听还能继续下去
      ```js
        const EventEmitter = require('events').EventEmitter
        class Geektime extends EventEmitter {
@@ -34,6 +38,8 @@
      ```
 
      - 非阻塞I-O
+       - 输入和输出
+       - 阻塞*和非阻塞*的区别就在于系统接收输入再到输出期间，能不能接收其他输入
      - 异步编程callback
      - 事件循环
      - promise
