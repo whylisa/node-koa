@@ -49,3 +49,26 @@
      - 事件循环
        - 
      - promise
+     - RPC
+       - remote procedure call 远程过程调用
+       - tcp通信方式
+         - 单工通信
+         - 半双工通信
+         - 全双工通信
+     - Buffer 
+       - 处理tcp流
+       - Buffer.from
+
+       - Buffer.alloc
+     - 压力测试
+       - ab
+       - 找到性能瓶颈所在
+       - top
+       - iostat
+     - node性能测试
+       - profile node -prof entry
+       - Chrome devtool 
+         - node --inspect-brk entry.js
+       - clinic.js
+       - cluster 
+         - cluster.fork()不要开这么满

@@ -1,8 +1,15 @@
-const path = require('path')
+// const path = require('path')
 // console.log(path.basename("D:\github\node-jk\path/path.js"))
 // console.log(path.basename("D:\github\node-jk\path"))
 // console.log(process.env.PATH)
 // console.log(path.extname("path.js"))
 // console.log(path.parse(__dirname))
 // console.log(path.parse(__filename))
-console.log(process)
+// console.log(process)
+// const fs = require('fs')
+// fs.writeFile(__dirname+'/he.js', 'nihao',(err) => {
+
+//   console.log(err)
+// })
+const url = require('url')
+console.log(url)
